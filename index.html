@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="flex justify-center items-center bg-gradient-to-b from-blue-700 to-green-500 py-12   flex-col px-8">
@@ -30,7 +31,7 @@
         <!-- SUppoort -->
         <img src="assets/images/banner1.jpg" alt="Gambar Banner" class="lg:w-2/3 lg:h-1/3 mt-6">
         <br>
-        <div class="w-full md:w-3/4 lg:w-3/4 px-4 py-4  border-2 border-yellow-400">
+        <div class="w-full md:w-3/4 lg:w-3/5 px-4 py-4  border-2 border-yellow-400">
             <p class="text-center text-white text-xl font-medium">
                 Total Suply 100.000.000 Token BSE STAR, Namun Yang Di Edarkan Hanya 1 % Saja  1.000.000 Token Affilio Saja!
             </p>
@@ -38,13 +39,39 @@
         <img src="assets/images/kaget.png" alt="Gambar Orang Kaget" class="w-1/2 h-1/2 mt-6">
 
         <!-- MARKET -->
+        <div class="carousel mt-6">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="assets/images/bareng.jpeg" class="w-full h-full" alt="Gambar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/banner2.jpg" class="w-full h-full" alt="Gambar 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/banner3.jpg" class="w-full h-full" alt="Gambar 3">
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <span onclick="currentSlide(0)"></span>
+              <span onclick="currentSlide(1)"></span>
+              <span onclick="currentSlide(2)"></span>
+            </div>
+            <button class="carousel-prev" onclick="prevSlide()">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button class="carousel-next" onclick="nextSlide()">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+          
+          
+          
 
-        <!-- AJAKAN 1 -->
-
-
-        <!-- AJAKAN2 -->
-
-        <!-- AJAKAN3 -->
+        <!-- AJAKAN -->
 
         <!-- PERINTAH -->
 
@@ -54,5 +81,7 @@
 
         <!-- MARKET 2 -->
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
